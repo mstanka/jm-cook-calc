@@ -7,8 +7,9 @@
 }
 
 :root {
-  --primary-color: #3dce5f;
+  --primary-color: #1d5c2c;
   --secondary-color: #58453c;
+  --light-color: #fafafa;
 }
 
 .container {
@@ -36,6 +37,7 @@
 
 h1 {
   text-transform: uppercase;
+  color: var(--light-color);
   font-size: 3rem;
 }
 
@@ -71,7 +73,7 @@ h1 {
 
 .btn:hover {
   background-color: var(--primary-color); 
-  color: white;
+  color: var(--light-color);
   cursor: pointer;
 }
 
@@ -92,10 +94,11 @@ h1 {
 .version {
   text-align: center;
   font-size: 10px;
+  color: var(--light-color);
 }
 
 .version a {
   text-decoration: none;
   cursor: pointer;
-  color: var(--primary-color);
+  color: var(--light-color);
 }
