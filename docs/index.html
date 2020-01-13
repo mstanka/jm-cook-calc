@@ -13,16 +13,17 @@
 <body>
   <div class="container">
     <div class="card">
-      <h1 class="heading mb-1">Cooking Calculator</h1>
+      <h1 class="mb-1">Cooking Calculator</h1>
 
       <!-- SELECT MEASURE -->
       <form id="calc-form">
         <div class="input-group mb-1">
-          <select class="custom-select p-1" id="inputSelect">
-            <option>Choose your measure...</option>
-            <option selected value="cup">Cup</option>
+          <select class="input p-1" id="input-select">
+            <option selected>Choose your measure...</option>
+            <option  value="cup">Cup</option>
             <option value="table-spoon">Table spoon</option>
             <option value="tea-spoon">Tea spoon</option>
+            <optgroup label=""></optgroup>
           </select>
         </div>
 
@@ -39,7 +40,7 @@
 
         <!-- RESULT -->
         <div class="input-group mb-1">
-          <input type="text" id="result" class="input input-result p-1" placeholder="?? ml"
+          <input type="text" id="result" class="input p-1" placeholder="?? ml"
             aria-label="Calculated amount" disabled>
         </div>
       </form>

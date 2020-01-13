@@ -6,7 +6,7 @@ function calculateResult(e) {
   // get elements
   const amount = document.getElementById("amount");
   const result = document.getElementById("result");
-  const measure = document.getElementById("inputSelect");
+  const measure = document.getElementById("input-select");
 
   if (amount.value < 0) {
     showError("Please check your values");
@@ -37,7 +37,7 @@ function showError(error) {
 
   // get elements
   const card = document.querySelector(".card");
-  const heading = document.querySelector(".heading");
+  const heading = document.querySelector("h1");
 
   // add class
   errorDiv.className = "alert";

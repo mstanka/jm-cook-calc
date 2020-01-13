@@ -23,15 +23,15 @@
 
   @include media-md {
     max-width: 450px;
-  } 
-
-  .custom-select,
+  }
+  
   .input,
   .btn {
     border-radius: 10px;
     border: 1px solid $primary-color;
     box-shadow: 0 3px 2px $primary-color;
     color: $primary-color;
+    background-color: $light-color;
     font-family: 'Neucha', cursive;
     font-size: 18px;
     font-weight: 700;
@@ -50,7 +50,7 @@
 
     &:active {
       transform: scale(.9);
-    }
+    } 
   }
 
 
