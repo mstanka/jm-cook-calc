@@ -1,0 +1,79 @@
+
+.container {
+  background: 
+    no-repeat 
+    url("../img/food.jpg"),
+    $secondary-color;
+  background-size: cover;
+  color: $primary-color; 
+  font-family: 'Neucha', cursive;
+  letter-spacing: .2rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card {
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+
+  @include media-md {
+    max-width: 450px;
+  } 
+
+  .custom-select,
+  .input,
+  .btn {
+    border-radius: 10px;
+    border: 1px solid $primary-color;
+    box-shadow: 0 3px 2px $primary-color;
+    color: $primary-color;
+    font-family: 'Neucha', cursive;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    text-align: center;
+    outline: none;
+    width: 100%;
+    padding: 1rem 2rem;
+    transition: all .3s ease-in;
+    
+    &:hover {
+      background-color: $primary-color; 
+      color: $light-color;
+      cursor: pointer;
+    }
+
+    &:active {
+      transform: scale(.9);
+    }
+  }
+
+
+  .alert {
+    color: red;
+    font-weight: 700;
+    padding: .5rem 0;
+    margin-bottom: 1rem;
+    background: white;
+    border: 1px solid $primary-color;
+    border-radius: 10px;
+  }
+}
+
+.version {
+  text-align: center;
+  font-size: 10px;
+  color: $light-color;
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    color: $light-color;
+  }
+}
+
